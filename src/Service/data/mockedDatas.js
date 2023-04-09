@@ -1,4 +1,4 @@
-{
+export const datas = [{
     "users": [{
             "id": 12,
             "userInfos": {
@@ -246,4 +246,4 @@
 
 
 
-}
+}]
