@@ -1,0 +1,11 @@
+.barchart-title {
+    position: absolute;
+    left: 30px;
+    top: -10px;
+}
+
+.bar-chart-wrapper {
+    position: relative;
+    max-width: 835px;
+    max-height: 320px;
+}

@@ -10,9 +10,13 @@
   },
   "dependencies": {
     "axios": "^1.3.4",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rechart": "^0.0.1"
+    "react-router": "^6.10.0",
+    "react-router-dom": "^6.10.0",
+    "rechart": "^0.0.1",
+    "recharts": "^2.5.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

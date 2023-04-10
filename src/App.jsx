@@ -1,8 +1,6 @@
-
-import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
-import { useState } from 'react'
-import {  getPerf } from './Service/Api/GetDatas'
+
 
 
 
@@ -10,32 +8,21 @@ import {  getPerf } from './Service/Api/GetDatas'
 
 
 function App() {
+
+ 
   
-  const [ userData, setUserData] = useState([])
-  const [ errorData, seterrorData] = useState([])
-
-  const typeData = 'url';
-  const userId = 12;
-
-  useEffect(() => {
-    const fetchDatas = async () => {
-      try {
-        const checkDatas = await getPerf(typeData, userId);
-        setUserData(checkDatas);
-      } catch(err){
-        seterrorData(err)
-      }
-    }
-
-    fetchDatas()
-  }, [typeData, userId]);
-
-  console.log(userData)
-  console.log(errorData)
+ 
  
   return (
     <div className="App">
-      test API
+      <ul>
+        <li>
+          <Link to={'/dashboard/12'}>Tableau de bord du profil 12</Link>
+        </li>
+        <li>
+          <Link to={'/dashboard/18'}>Tableau de bord du profil 18</Link>
+        </li>
+      </ul>
     </div>
   )
 }
