@@ -13,3 +13,7 @@
 .bg-dark {
     background: var(--dark);
 }
+
+.text-light {
+    color: var(--light);
+}

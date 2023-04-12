@@ -15,14 +15,7 @@ function App() {
  
   return (
     <div className="App">
-      <ul>
-        <li>
-          <Link to={'/dashboard/12'}>Tableau de bord du profil 12</Link>
-        </li>
-        <li>
-          <Link to={'/dashboard/18'}>Tableau de bord du profil 18</Link>
-        </li>
-      </ul>
+     <h2 className='text-light'>Welcome to the test version</h2>
     </div>
   )
 }

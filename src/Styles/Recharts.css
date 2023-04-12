@@ -9,3 +9,13 @@
     max-width: 835px;
     max-height: 320px;
 }
+
+.barchart-tooltip {
+    padding: 7px;
+    height: 100%;
+    border: none;
+}
+
+.label {
+    text-align: center;
+}

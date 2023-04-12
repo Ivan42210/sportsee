@@ -1,9 +1,10 @@
 
 import '../Styles/Recharts.css'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import CustomTootipBar from './CustomTooltipActivity';
 
 export default function ActivityChart({data}) {
-    console.log(data)
+   
   
     return (
       <div className="bg-secondary bar-chart-wrapper">
@@ -40,7 +41,7 @@ export default function ActivityChart({data}) {
               />
 
               <YAxis yAxisId="cal" dataKey="calories" hide={true} />
-              <Tooltip offset={25} />
+              <Tooltip offset={25} content={<CustomTootipBar/>}/>
               <Legend
                   verticalAlign="top"
                   align="right"

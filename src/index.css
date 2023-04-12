@@ -1,8 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
+  font-family: "Roboto", sans-serif;
   --dark: #020203;
   --danger: #ff0000;
   --primary: #4ab8ff;
@@ -12,6 +10,16 @@
   --secondary: #e5e5e5;
 }
 
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
 body {
   background-color: var(--dark);
+}
+
+.square-part {
+  max-width: 258px;
+  max-height: 263px;
 }

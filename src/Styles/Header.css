@@ -1,0 +1,24 @@
+.navbar {
+    height: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_header {
+    margin-right: 149px;
+}
+
+.navbar_menu {
+    display: flex;
+    max-width: 994px;
+    justify-content: space-between;
+}
+
+.navbar-link {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}

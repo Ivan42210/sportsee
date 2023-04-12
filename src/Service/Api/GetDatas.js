@@ -29,7 +29,7 @@ const getUsers = async(userId) => {
     }
 }
 
-const getActivity = async(id) => {
+const getActivity = async(userId) => {
     if (typeData === false) {
         try {
             const response = await axios.get(`http://localhost:3000/user/${userId}/activity`)
@@ -37,12 +37,14 @@ const getActivity = async(id) => {
 
             return new activityModel(data)
 
+
         } catch (error) {
             return error
         }
     } else {
 
-        const user = datas[0].activity.find(ac => ac.userId = id)
+        const user = datas[0].activity.find(ac => ac.userId === userId)
+
         const userMod = new activityModel(user);
 
         return userMod;
@@ -50,7 +52,7 @@ const getActivity = async(id) => {
     }
 }
 
-const getSessions = async(id) => {
+const getSessions = async(userId) => {
     if (typeData === false) {
         try {
             const response = await axios.get(`http://localhost:3000/user/${userId}/average-sessions`)
@@ -62,15 +64,16 @@ const getSessions = async(id) => {
             return error
         }
     } else {
-        const user = datas[0].sessions.find(u => u.userId = id)
+        const user = datas[0].sessions.find(u => u.userId === userId)
         const userMod = new AverageSession(user);
-
+        console.log('check getsessions')
+        console.log(user)
         return userMod;
 
     }
 }
 
-const getPerf = async(id) => {
+const getPerf = async(userId) => {
     if (typeData === false) {
         try {
             const response = await axios.get(`http://localhost:3000/user/${userId}/performance`)
@@ -82,7 +85,7 @@ const getPerf = async(id) => {
             return error
         }
     } else {
-        const user = datas[0].perf.find(u => u.userId = id)
+        const user = datas[0].perf.find(u => u.userId === userId)
         const userMod = new performanceModel(user);
 
         return userMod;
