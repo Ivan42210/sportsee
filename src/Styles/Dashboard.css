@@ -4,6 +4,16 @@
 }
 
 .dashboard-body {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 65%;
+    height: 100vh;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.dashboard-chart-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
 }

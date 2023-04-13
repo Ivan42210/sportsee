@@ -64,7 +64,7 @@ export default function Dashboard(){
                 <h2>Bonjour {userData._firstName} {userData._lastName}</h2>
                 <section>
                 <ActivityChart data={activityData}/>
-                <div>
+                <div className="dashboard-chart-group">
                   <LinearChart data={sessionsData}/>
                   <PerfRadar data={perfData}/>
                 </div>

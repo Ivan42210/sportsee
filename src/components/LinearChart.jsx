@@ -5,9 +5,14 @@ import CustomTooltipLine from "./CustomTooltipAverage";
 export default function LinearChart({data}){
    
     return(
-        <div className="bg-danger square-part">
-        <ResponsiveContainer width="100%" height={263}>
-        <LineChart width={200} height={230} data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
+        <div className="bg-danger line-chart-wrapper">
+        <ResponsiveContainer width="100%">
+        <LineChart height={230} data={data} margin={{
+                  top: 20,
+                  right: 30,
+                  left: 20,
+                  bottom: 5,
+              }}  >
           <XAxis dataKey="day" tick={{fill:'var(--light)'}}  tickLine={false}
                         axisLine={false}/>
           <YAxis
