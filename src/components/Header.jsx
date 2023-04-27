@@ -12,6 +12,8 @@ export default function Header(){
             <section className="navbar_menu">
                 <Link className='text-light navbar-link' to={'/'}>Accueil</Link>
                 <Link className='text-light navbar-link' to={'/profil'}>Profil</Link>
+                <p className='text-light navbar-link'>Réglages</p>
+                <p className='text-light navbar-link'>Communauté</p>
             </section>
         </nav>
     )

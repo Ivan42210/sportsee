@@ -6,13 +6,17 @@
 }
 
 .navbar_header {
-    margin-right: 149px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar_menu {
     display: flex;
-    max-width: 994px;
-    justify-content: space-between;
+    align-items: center;
+    width: 66%;
+    gap: 7rem;
+    margin-left: 3rem;
 }
 
 .navbar-link {

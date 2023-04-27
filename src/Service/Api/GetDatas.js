@@ -5,18 +5,23 @@ import { usersModel } from "../../models/User";
 import { activityModel } from "../../models/Activity";
 import { performanceModel } from "../../models/Perfomance";
 import { AverageSession } from "../../models/AverageSession";
+import { formatUserInfos } from "../formateur/formaDatas";
 
 let typeData = mockedData
 
 
 
 const getUsers = async(userId) => {
+
     if (typeData === false) {
+
         try {
             const response = await axios.get(`http://localhost:3000/user/${userId}`)
-            console.log(response)
             const data = response.data.data
+            console.log('userDatas infos')
+            console.log(data)
             return new usersModel(data)
+
         } catch (error) {
             return error
         }
@@ -66,8 +71,7 @@ const getSessions = async(userId) => {
     } else {
         const user = datas[0].sessions.find(u => u.userId === userId)
         const userMod = new AverageSession(user);
-        console.log('check getsessions')
-        console.log(user)
+
         return userMod;
 
     }

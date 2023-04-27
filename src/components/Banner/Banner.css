@@ -1,0 +1,21 @@
+.banner {
+    padding: -1em 0;
+    height: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner-title > span {
+    color: var(--danger);
+}
+
+.banner-text {
+    font-size: 18px;
+    margin-top: 41px;
+}

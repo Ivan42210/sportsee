@@ -1,0 +1,13 @@
+.user-info-container {
+    display: flex;
+    gap: 24px;
+    padding: 31px;
+    background: var(--secondary);
+    width: 100%;
+    border-radius: 5px;
+}
+
+.infos-icon {
+    height: 60px;
+    width: 60px;
+}

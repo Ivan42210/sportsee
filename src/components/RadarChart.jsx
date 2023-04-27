@@ -3,7 +3,7 @@ import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, RadarChart, ResponsiveConta
 
 
 export default function PerfRadar({data}){
-    console.log(data)
+    
 
     return(
         <div className="radar-chart-wrapper">

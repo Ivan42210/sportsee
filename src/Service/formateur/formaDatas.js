@@ -1,3 +1,25 @@
+const formatUserInfos = (data) => {
+
+
+    return {
+
+        firstName: data._firstName,
+        id: data._id,
+        lastName: data._lastName,
+        age: data._age,
+        score: data._todayScore,
+        calories: data._keyData.calorieCount,
+        glucides: data._keyData.carbohydrateCount,
+        lipides: data._keyData.lipidCount,
+        proteins: data._keyData.proteinCount
+
+    }
+
+}
+
+
+
+
 const formatActivityData = (data) => {
 
     const sessions = data._sessions.map((session, index) => {
@@ -11,7 +33,7 @@ const formatActivityData = (data) => {
             calories: session.calories,
         }
     });
-    console
+
     return sessions;
 };
 
@@ -57,21 +79,5 @@ const formatPerf = (data) => {
     return perfResult
 }
 
-const formatKeyData = (data) => {
 
-    const keyDatasResult = data._keyData.map(key => {
-
-        console.log(key)
-        return {
-            Calories: key.calorieCount,
-            Protéines: key.proteinCount,
-            Lipides: key.lipidCount,
-            Glucides: key.carbohydrateCount
-        }
-
-    })
-
-    // return keyDatasResult
-}
-
-export { formatActivityData, formatSessions, formatPerf, formatKeyData }
+export { formatActivityData, formatSessions, formatPerf, formatUserInfos }

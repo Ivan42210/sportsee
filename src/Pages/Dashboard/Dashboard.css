@@ -1,0 +1,31 @@
+.dashboard {
+    display: flex;
+    width: 100%;
+}
+
+.dashboard-body {
+    position: relative;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.dashboard-chart-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.dashboard-chart-section {
+    width: 70%;
+}
+
+.dashboard-data-section {
+    display: flex;
+    gap: 30px;
+}
+
+.dashboard-infos-section {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
