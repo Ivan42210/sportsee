@@ -1,0 +1,25 @@
+.sidebar {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 164px;
+}
+
+.sidebar > p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.sidebar-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.sidebar-icons > img {
+    width: 64px;
+    height: 64px;
+}

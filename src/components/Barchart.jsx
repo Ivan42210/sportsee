@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 import '../Styles/Recharts.css'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import CustomTootipBar from './CustomTooltipActivity';
@@ -73,8 +73,15 @@ export default function ActivityChart({data}) {
   }
 
 
-
-
+ActivityChart.propTypes = {
+    data: PropTypes.arrayOf(
+        PropTypes.shape({
+            day: PropTypes.number,
+            calories: PropTypes.number,
+            kilgram: PropTypes.number
+        })
+    ).isRequired
+}
 
 
 

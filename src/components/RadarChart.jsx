@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, RadarChart, ResponsiveContainer, Radar } from "recharts"
 
 
@@ -26,3 +26,5 @@ export default function PerfRadar({data}){
         </div>
     )
 }
+
+

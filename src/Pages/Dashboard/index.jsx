@@ -6,10 +6,11 @@ import './Dashboard.css'
 import ActivityChart from "../../components/Barchart";
 import LinearChart from "../../components/LinearChart";
 import PerfRadar from "../../components/RadarChart";
-import SideBar from "../../components/SideBar";
+
 import Banner from "../../components/Banner";
 import UserInfos from "../../components/UserInfos";
 import RadialChart from "../../components/RadialChart";
+import SideBar from "../../components/SideBar";
 //import UserInfos from "../../components/UserInfos";
 
 /*{     <UserInfos 
@@ -86,7 +87,7 @@ export default function Dashboard(){
                       <div className="dashboard-chart-group">
                         <LinearChart data={sessionsData}/>
                         <PerfRadar data={perfData}/>
-                        <RadialChart data={userData.score}/>
+                        <RadialChart data={userData.todayScore}/>
                       </div>
                     </section>
                     <section className="dashboard-infos-section">

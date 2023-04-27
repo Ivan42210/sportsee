@@ -1,5 +1,5 @@
 import './Banner.css'
-import PropTypes from 'prop-types'
+import propTypes from 'prop-types'
 
 /*{  }*/
 
@@ -14,6 +14,6 @@ export default function Banner({data}){
     )
 }
 
-Banner.PropTypes = {
-    data: PropTypes.string
+Banner.propTypes = {
+    data: propTypes.string
 }

@@ -5,11 +5,18 @@ import { usersModel } from "../../models/User";
 import { activityModel } from "../../models/Activity";
 import { performanceModel } from "../../models/Perfomance";
 import { AverageSession } from "../../models/AverageSession";
-import { formatUserInfos } from "../formateur/formaDatas";
+
+
 
 let typeData = mockedData
 
-
+/**
+ * Retrieves user data from API or mocked data
+ * @function getUsers
+ * @async
+ * @param {number} userId 
+ * @returns {Promise<usersModel|Error>} - Promise containing a usersModel object or an error
+ */
 
 const getUsers = async(userId) => {
 
@@ -34,6 +41,14 @@ const getUsers = async(userId) => {
     }
 }
 
+/**
+ * Retrieves user activity data from API or mocked data
+ * @function getActivity
+ * @async
+ * @param {number} userId 
+ * @returns {Promise<activityModel|Error>} - Promise containing an activityModel object or an error
+ */
+
 const getActivity = async(userId) => {
     if (typeData === false) {
         try {
@@ -57,6 +72,15 @@ const getActivity = async(userId) => {
     }
 }
 
+
+/**
+ * Retrieves user session data from API or mocked data
+ * @function getSessions
+ * @async
+ * @param {number} userId 
+ * @returns {Promise<AverageSession|Error>} - Promise containing an AverageSession object or an error
+ */
+
 const getSessions = async(userId) => {
     if (typeData === false) {
         try {
@@ -76,6 +100,14 @@ const getSessions = async(userId) => {
 
     }
 }
+
+/**
+ * Retrieves user performance data from API or mocked data
+ * @function getPerf
+ * @async
+ * @param {number} userId 
+ * @returns {Promise<performanceModel|Error>} - Promise containing a performanceModel object or an error
+ */
 
 const getPerf = async(userId) => {
     if (typeData === false) {

@@ -5,7 +5,7 @@ export class usersModel {
         this._lastName = data.userInfos.lastName
         this._age = data.userInfos.age
         this._id = data.id;
-        this._todayScore = data.score * 100 || data.todayScore * 100;
+        this._todayScore = data.score || data.todayScore;
         this._keyData = data.keyData
 
     }

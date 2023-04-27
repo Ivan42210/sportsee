@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 import { LineChart, ResponsiveContainer, XAxis, YAxis, Line, CartesianGrid, Tooltip, Legend } from "recharts";
 import CustomTooltipLine from "./CustomTooltipAverage";
 
@@ -28,4 +28,13 @@ export default function LinearChart({data}){
         </ResponsiveContainer>  
       </div>
     )
+}
+
+LinearChart.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.string,
+      duration: PropTypes.number,
+    })
+  ).isRequired
 }

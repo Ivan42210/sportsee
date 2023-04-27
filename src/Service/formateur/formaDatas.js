@@ -7,7 +7,7 @@ const formatUserInfos = (data) => {
         id: data._id,
         lastName: data._lastName,
         age: data._age,
-        score: data._todayScore,
+        todayScore: { name: 'score', score: data._todayScore * 100, fill: 'var(--danger)' },
         calories: data._keyData.calorieCount,
         glucides: data._keyData.carbohydrateCount,
         lipides: data._keyData.lipidCount,
