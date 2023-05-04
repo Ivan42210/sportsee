@@ -1,4 +1,5 @@
-import { RadialBarChart, RadialBar, ResponsiveContainer, PolarAngleAxis } from "recharts"
+
+import { RadialBarChart, RadialBar, ResponsiveContainer, PolarAngleAxis} from "recharts"
 
 export default function RadialChart({data}){
 
@@ -28,19 +29,21 @@ export default function RadialChart({data}){
 
                 
             </ResponsiveContainer>
-    */
-    
-    return(
-        <article className="radial-wrapper">
+
+            <article className="radial-wrapper">
             <h2 className="radial-title">Score</h2>
             <p className="radial-text">
                 <span>{data.score} %</span>
                 <br />
                 de votre objectif
             </p>
-           
-           
 
-        </article>
+             </article>
+    */
+    
+    return(
+        <>
+        </>
+       
     )
 }

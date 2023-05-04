@@ -78,7 +78,7 @@ ActivityChart.propTypes = {
         PropTypes.shape({
             day: PropTypes.number,
             calories: PropTypes.number,
-            kilgram: PropTypes.number
+            kilogram: PropTypes.number
         })
     ).isRequired
 }

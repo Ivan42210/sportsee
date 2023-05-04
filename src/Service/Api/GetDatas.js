@@ -25,8 +25,7 @@ const getUsers = async(userId) => {
         try {
             const response = await axios.get(`http://localhost:3000/user/${userId}`)
             const data = response.data.data
-            console.log('userDatas infos')
-            console.log(data)
+
             return new usersModel(data)
 
         } catch (error) {

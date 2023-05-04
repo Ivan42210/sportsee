@@ -1,20 +1,19 @@
-const formatUserInfos = (data) => {
+const formatUserInfos = (datas) => {
 
+    //console.log(datas)
+    // const { calorieCount, proteinCount, carbohydrateCount, lipidCount } = datas.datas;
 
+    console.log('formatter')
+    console.log(datas.datas.calorieCount)
+        //console.log(`calories: ${calorieCount}, protéines: ${proteinCount},  glucides: ${carbohydrateCount}, lipides: ${lipidCount}`)
+
+}
+
+const formatKey = (data) => {
     return {
-
-        firstName: data._firstName,
-        id: data._id,
-        lastName: data._lastName,
-        age: data._age,
-        todayScore: { name: 'score', score: data._todayScore * 100, fill: 'var(--danger)' },
-        calories: data._keyData.calorieCount,
-        glucides: data._keyData.carbohydrateCount,
-        lipides: data._keyData.lipidCount,
-        proteins: data._keyData.proteinCount
-
+        name: 'score',
+        score: data._todayScore
     }
-
 }
 
 
@@ -80,4 +79,4 @@ const formatPerf = (data) => {
 }
 
 
-export { formatActivityData, formatSessions, formatPerf, formatUserInfos }
+export { formatActivityData, formatSessions, formatPerf, formatUserInfos, formatKey }

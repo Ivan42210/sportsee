@@ -1,58 +1,62 @@
-import PropTypes from 'prop-types'
-import calorieIcon from '../../assets/icons/calories-icon.png'
-import glucidesIcon from '../../assets/icons/carbs-icon.png'
-import lipidesIcon from '../../assets/icons/fat-icon.png'
-import proteinIcon from '../../assets/icons/protein-icon.png'
-import './userInfos.css'
 
-export default function UserInfos({keyData, value}){
-
+//import calorieIcon from '../../assets/icons/calories-icon.png'
+//import glucidesIcon from '../../assets/icons/carbs-icon.png'
+//import lipidesIcon from '../../assets/icons/fat-icon.png'
+//import proteinIcon from '../../assets/icons/protein-icon.png'
+//import './userInfos.css'
+//import { formatUserInfos } from '../../Service/formateur/formaDatas'
 
 
+export default function UserInfos({keyData,data}){
+
+   
+
+
+
+   //console.log('user infos cards')
+  // console.log(shapeData)
+  
+    
+/*
     let title = ''
     let icon = ''
-    let objValue = ''
+    let value = ''
     
-
-
         switch(keyData){
            case 'calories':
              title = 'Calories'
              icon = calorieIcon
-             objValue = `${value} kCal`
+             value = `${shapeData.calories} kCal`
             
             break
             case 'glucides':
                 title= 'Glucides'
                 icon= glucidesIcon
-                objValue = `${value} g`
+                value = `${shapeData.glucides} g`
             break
             case 'protéines':
                 title = 'Protéines'
                 icon = proteinIcon
-                objValue = `${value} g`
+                value = `${shapeData.proteins} g`
             break
             case 'lipides':
                 title= 'Lipides'
                 icon = lipidesIcon
-                objValue = `${value} g`
+                value = `${shapeData.lipides} g`
             break
         }
-    
+  
    
     
     return(
         <article className="user-info-container">
             <img className='infos-icon' src={icon} alt={title} />
                 <div className='infos-body'>
-                    <p>{objValue}</p>
+                    <p>{value}</p>
                     <span>{title}</span>
                 </div>
+            
         </article>
-    )
+    )*/
 }
 
-UserInfos.propTypes = {
-    value: PropTypes.number,
-    keyData: PropTypes.string
-}

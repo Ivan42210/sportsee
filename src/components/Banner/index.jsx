@@ -1,9 +1,13 @@
+
 import './Banner.css'
 import propTypes from 'prop-types'
+
 
 /*{  }*/
 
 export default function Banner({data}){
+
+    
    
     return(
         <section className='banner'>

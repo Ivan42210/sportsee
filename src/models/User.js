@@ -1,6 +1,6 @@
 export class usersModel {
     constructor(data) {
-        this.data = data
+        // this.data = data
         this._firstName = data.userInfos.firstName
         this._lastName = data.userInfos.lastName
         this._age = data.userInfos.age
