@@ -8,7 +8,7 @@ import LinearChart from "../../components/LinearChart";
 import PerfRadar from "../../components/RadarChart";
 
 import Banner from "../../components/Banner";
-//import UserInfos from "../../components/UserInfos";
+import UserInfos from "../../components/UserInfos";
 import RadialChart from "../../components/RadialChart";
 import SideBar from "../../components/SideBar";
 
@@ -85,7 +85,10 @@ export default function Dashboard(){
                       </div>
                     </section>
                     <section className="dashboard-infos-section">
-                      
+                    <UserInfos keyData={'calories'} data={userData._calories}/>
+                      <UserInfos keyData={'protéines'} data={userData._proteines}/>
+                      <UserInfos keyData={'glucides'} data={userData._glucides}/>
+                      <UserInfos keyData={'lipides'} data={userData._lipides}/>
                     </section>
                   </div>
                 </main>

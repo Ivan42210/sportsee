@@ -2,6 +2,14 @@ import PropTypes from 'prop-types'
 import { LineChart, ResponsiveContainer, XAxis, YAxis, Line, CartesianGrid, Tooltip, Legend } from "recharts";
 import CustomTooltipLine from "./CustomTooltipAverage";
 
+/**
+ * A line chart component to display the duration of an activity over a period of time.
+ * @param {Object} props - The props object containing the data array.
+ * @param {Array} props.data - An array of objects containing the day and duration of an activity.
+ * @returns {JSX.Element} - A JSX element representing the line chart.
+ */
+
+
 export default function LinearChart({data}){
    
     return(

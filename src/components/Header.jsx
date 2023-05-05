@@ -1,3 +1,9 @@
+/**
+ * Renders the header component with a navigation bar and logo.
+ *
+ * @returns {JSX.Element} The rendered header component.
+ */
+
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.svg'
 import '../Styles/Header.css'

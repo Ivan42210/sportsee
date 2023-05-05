@@ -4,6 +4,12 @@ import zen from '../../assets/icons/zen.png'
 import muscles from '../../assets/icons/muscles.png'
 import bicycle from '../../assets/icons/bicycle.png'
 
+/**
+ * Sidebar component to display icons and copyright notice.
+ * @returns {JSX.Element} - The Sidebar component.
+ */
+
+
 export default function SideBar(){
     return(
         <div className="sidebar text-light bg-dark">

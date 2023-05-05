@@ -3,6 +3,17 @@ import '../Styles/Recharts.css'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import CustomTootipBar from './CustomTooltipActivity';
 
+/**
+ * React component for rendering a bar chart displaying daily activity data.
+ * @param {Object[]} props - The props object.
+ * @param {Object[]} props.data - An array of daily activity data objects.
+ * @param {number} props.data[].day - The day of the month.
+ * @param {number} props.data[].calories - The number of calories burned on that day.
+ * @param {number} props.data[].kilogram - The weight on that day.
+ * @returns {JSX.Element} A React bar chart component.
+ */
+
+
 export default function ActivityChart({data}) {
    
   

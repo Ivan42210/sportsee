@@ -3,7 +3,12 @@ import './Banner.css'
 import propTypes from 'prop-types'
 
 
-/*{  }*/
+/**
+ * Banner component to display a congratulatory message with a personalized name.
+ * @param {Object} props - The props for the component.
+ * @param {string} props.data - The name to display in the message.
+ * @returns {JSX.Element} - The Banner component.
+ */
 
 export default function Banner({data}){
 
