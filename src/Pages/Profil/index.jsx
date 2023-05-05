@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom"
 
+/**
+ * Component representing the user profile page.
+ * @function
+ * @returns {JSX.Element}
+ */
+
+
 export default function Profil(){
     return(
         <section>

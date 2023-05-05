@@ -1,13 +1,9 @@
-const formatUserInfos = (datas) => {
-
-    //console.log(datas)
-    // const { calorieCount, proteinCount, carbohydrateCount, lipidCount } = datas.datas;
-
-    console.log('formatter')
-    console.log(datas.datas.calorieCount)
-        //console.log(`calories: ${calorieCount}, protéines: ${proteinCount},  glucides: ${carbohydrateCount}, lipides: ${lipidCount}`)
-
-}
+/**
+ * Formats the score data.
+ *
+ * @param {number} data - The raw score data.
+ * @returns {Array} - An array of objects containing formatted score data.
+ */
 
 const formatScore = (data) => {
     return [{
@@ -17,6 +13,13 @@ const formatScore = (data) => {
 }
 
 
+
+/**
+ * Formats the activity data.
+ *
+ * @param {object} data - The raw data.
+ * @returns {Array} - An array of objects containing formatted activity data.
+ */
 
 
 const formatActivityData = (data) => {
@@ -36,6 +39,14 @@ const formatActivityData = (data) => {
     return sessions;
 };
 
+
+
+/**
+ * Formats the sessions data.
+ *
+ * @param {object} data - The raw data.
+ * @returns {Array} - An array of objects containing formatted sessions data.
+ */
 
 const formatSessions = (data) => {
 
@@ -57,6 +68,15 @@ const formatSessions = (data) => {
 
     return averageSessions
 }
+
+
+/**
+ * Formats the performance data.
+ *
+ * @param {object} data - The raw data.
+ * @returns {Array} - An array of objects containing formatted performance data.
+ */
+
 
 const formatPerf = (data) => {
     const french = {

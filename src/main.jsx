@@ -5,9 +5,13 @@ import Dashboard from './Pages/Dashboard'
 import Profil from './Pages/Profil'
 import './index.css'
 import './Styles/Colors.css'
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 
+/**
+ * Renders the application with React.
+ * @module index
+ */
 
 
 

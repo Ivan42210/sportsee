@@ -13,7 +13,11 @@ import RadialChart from "../../components/RadialChart";
 import SideBar from "../../components/SideBar";
 
 
-
+/**
+ * Dashboard component to display user data.
+ * @function Dashboard
+ * @returns {JSX.Element} The JSX element representing the Dashboard component.
+ */
 
 
 
@@ -64,8 +68,7 @@ export default function Dashboard(){
     
     
       console.log(error)
-      console.log('test user format')
-      console.log(userData)
+     
       
     return(
 
@@ -97,9 +100,3 @@ export default function Dashboard(){
 }
 
 
-/* <UserInfos keyData={'calories'} data={userData._keyData}/>
-                      <UserInfos keyData={'protéines'} data={userData._keyData}/>
-                      <UserInfos keyData={'glucides'} data={userData._keyData}/>
-                      <UserInfos keyData={'lipides'} data={userData._keyData}/>
-                      
-                       <RadialChart data={userData.todayScore}/>*/
