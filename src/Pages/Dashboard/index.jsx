@@ -9,9 +9,9 @@ import PerfRadar from "../../components/RadarChart";
 
 import Banner from "../../components/Banner";
 //import UserInfos from "../../components/UserInfos";
-//import RadialChart from "../../components/RadialChart";
+import RadialChart from "../../components/RadialChart";
 import SideBar from "../../components/SideBar";
-import UserSection from "../../components/UserInfosSection";
+
 
 
 
@@ -60,10 +60,12 @@ export default function Dashboard(){
     
         fetchDatas()
       }, [userId]);
- 
+
     
-      console.log('test user format')
+    
       console.log(error)
+      console.log('test user format')
+      console.log(userData)
       
     return(
 
@@ -79,11 +81,11 @@ export default function Dashboard(){
                       <div className="dashboard-chart-group">
                         <LinearChart data={sessionsData}/>
                         <PerfRadar data={perfData}/>
-                       
+                        <RadialChart data={userData._todayScore}/>
                       </div>
                     </section>
                     <section className="dashboard-infos-section">
-                     <UserSection datas={userData._keyData} />
+                      
                     </section>
                   </div>
                 </main>

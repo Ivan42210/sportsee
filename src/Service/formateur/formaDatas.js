@@ -9,11 +9,11 @@ const formatUserInfos = (datas) => {
 
 }
 
-const formatKey = (data) => {
-    return {
-        name: 'score',
-        score: data._todayScore
-    }
+const formatScore = (data) => {
+    return [{
+        score: data * 100,
+        fill: '#ff0000',
+    }]
 }
 
 
@@ -79,4 +79,4 @@ const formatPerf = (data) => {
 }
 
 
-export { formatActivityData, formatSessions, formatPerf, formatUserInfos, formatKey }
+export { formatActivityData, formatSessions, formatPerf, formatUserInfos, formatScore }

@@ -23,3 +23,11 @@ body {
   max-width: 258px;
   max-height: 263px;
 }
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}

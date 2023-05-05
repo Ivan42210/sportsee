@@ -26,23 +26,23 @@ export default function UserInfos({keyData,data}){
            case 'calories':
              title = 'Calories'
              icon = calorieIcon
-             value = `${shapeData.calories} kCal`
+             value = `${data} kCal`
             
             break
             case 'glucides':
                 title= 'Glucides'
                 icon= glucidesIcon
-                value = `${shapeData.glucides} g`
+                value = `${data} g`
             break
             case 'protéines':
                 title = 'Protéines'
                 icon = proteinIcon
-                value = `${shapeData.proteins} g`
+                value = `${data} g`
             break
             case 'lipides':
                 title= 'Lipides'
                 icon = lipidesIcon
-                value = `${shapeData.lipides} g`
+                value = `${data} g`
             break
         }
   
