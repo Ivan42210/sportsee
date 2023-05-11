@@ -99,4 +99,4 @@ const formatPerf = (data) => {
 }
 
 
-export { formatActivityData, formatSessions, formatPerf, formatUserInfos, formatScore }
+export { formatActivityData, formatSessions, formatPerf, formatScore }
