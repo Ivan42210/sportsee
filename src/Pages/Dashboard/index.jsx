@@ -79,9 +79,7 @@ export default function Dashboard(){
     return(
 
         <div className="bg-light dashboard">
-                <section>
-                  <SideBar/>
-                </section>
+               
                 <main className="dashboard-body">
                   <Banner data={userData._firstName}/>
                   <div className="dashboard-data-section">
@@ -101,6 +99,9 @@ export default function Dashboard(){
                     </section>
                   </div>
                 </main>
+                <section>
+                  <SideBar/>
+                </section>
         </div>
     )
 }

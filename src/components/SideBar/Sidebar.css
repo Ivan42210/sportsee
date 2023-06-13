@@ -23,3 +23,23 @@
     width: 64px;
     height: 64px;
 }
+
+@media (max-width: 1256px) {
+    .sidebar {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        padding: 10px;
+    }
+    .sidebar > p {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+    }
+    .sidebar-icons {
+        flex-direction: row;
+    }
+    .sidebar-icons > img {
+        width: 50px;
+        height: 50px;
+    }
+}

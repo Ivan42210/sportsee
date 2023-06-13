@@ -1,5 +1,6 @@
 .dashboard {
     display: flex;
+    flex-direction: row-reverse;
     width: 100%;
 }
 
@@ -30,10 +31,36 @@
     display: flex;
     flex-direction: column;
     gap: 39px;
+    width: 30%;
 }
 
 @media (max-width: 1400px) {
+    .dashboard-chart-section {
+        width: 100%;
+    }
+    .dashboard-data-section {
+        flex-direction: column;
+    }
+    .dashboard-infos-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1256px) {
+    .dashboard {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        height: 100%;
+    }
+    .dashboard-body {
+        height: fit-content;
+    }
     .dashboard-chart-group {
         grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
     }
 }

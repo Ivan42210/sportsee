@@ -3,11 +3,20 @@
     gap: 24px;
     padding: 31px;
     background: var(--secondary);
-    width: 100%;
+    width: auto;
     border-radius: 5px;
+    align-items: center;
 }
 
 .infos-icon {
     height: 60px;
     width: 60px;
+}
+
+@media (max-width: 1400px) {
+    .user-info-container {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
