@@ -11,6 +11,8 @@ import Banner from "../../components/Banner";
 import UserInfos from "../../components/UserInfos";
 import RadialChart from "../../components/RadialChart";
 import SideBar from "../../components/SideBar";
+import { Navigate } from "react-router";
+
 
 
 /**
@@ -25,6 +27,10 @@ export default function Dashboard(){
 
     const href= window.location.pathname.split('/')[2];
     const userId = parseFloat(href)
+
+    if(!userId){
+      return <Navigate to={'*'}/>
+    }
 
 
     const [userData, setInfos] = useState([])
