@@ -7,6 +7,7 @@ import './index.css'
 import './Styles/Colors.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
+import Error from './Pages/Error'
 
 /**
  * Renders the application with React.
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route exact path='/' element={<App />}/>
       <Route path='/dashboard/:id' element={<Dashboard />}/>
       <Route path='/profil' element={<Profil/>}/>
+      <Route path='*' element={<Error />}/>
     </Routes>
     </Router>
   </React.StrictMode>,
